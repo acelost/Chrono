@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChronoDemo</string>
+    <string name="navigate_back">Back</string>
+    <string name="measure_lifecycle_methods">Measure Lifecycle Methods</string>
+    <string name="trace_lifecycle_methods">Trace Lifecycle Methods</string>
+    <string name="trace_fragment_transaction">Trace Fragment Transaction</string>
+</resources>
