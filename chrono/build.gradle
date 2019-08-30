@@ -5,7 +5,7 @@ publish {
 
     def groupProjectID = 'com.acelost.chrono'
     def artifactProjectID = 'chrono'
-    def publishVersionID = '0.0.1'
+    def publishVersionID = '0.0.3'
 
     userOrg = 'acelost'
     repoName = 'Chrono'

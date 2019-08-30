@@ -7,7 +7,7 @@ Android library for measuring time intervals and tracing methods.
 ## How to integrate
 
 ```groovy
-implementation 'com.acelost.chrono:chrono:0.0.1'
+implementation 'com.acelost.chrono:chrono:0.0.3'
 ```
 
 ## License

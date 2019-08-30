@@ -8,6 +8,7 @@ import java.util.*;
 
 public final class Chrono {
 
+    private static final float NANOS_IN_MILLISECOND = 1_000_000f;
     private static final Object timersLock = new Object();
     private static final Object bunchesLock = new Object();
     private static final Map<String, Timer> timers = new HashMap<>();
@@ -129,8 +130,8 @@ public final class Chrono {
     }
 
     @NonNull
-    static String ms(float ms) {
-        return String.format(Locale.ENGLISH, "%.1f\u202Ams", ms);
+    static String ms(float ns) {
+        return String.format(Locale.ENGLISH, "%.1f\u202Ams", ns / NANOS_IN_MILLISECOND);
     }
 
     static void warn(@NonNull final String message, @Nullable Object... args) {

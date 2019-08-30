@@ -3,15 +3,11 @@ package com.acelost.chrono;
 import android.os.SystemClock;
 import androidx.annotation.NonNull;
 
-import java.text.SimpleDateFormat;
 import java.util.concurrent.atomic.AtomicLong;
 
 public final class Timer {
 
     private static final int NOT_STARTED = -1;
-    private static final float NANOS_IN_MILLISECOND = 1_000_000f;
-
-    private final SimpleDateFormat dateFormat = new SimpleDateFormat("kk:mm:ss.SSS");
 
     @NonNull
     private final String subject;
@@ -74,8 +70,8 @@ public final class Timer {
         if (isStarted()) {
             Chrono.warn("Timer \'%s\' is already started!", subject);
         } else {
+            Chrono.log("Start timer \'%s\'", subject);
             startTime.set(now());
-            Chrono.log("Start timer \'%s\' аt %s", subject, dateFormat.format(startTime));
         }
         return this;
     }
@@ -136,6 +132,6 @@ public final class Timer {
 
     @NonNull
     private static String ms(long ns) {
-        return Chrono.ms(ns / NANOS_IN_MILLISECOND);
+        return Chrono.ms(ns);
     }
 }
