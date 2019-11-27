@@ -11,7 +11,7 @@ implementation 'com.acelost.chrono:chrono:0.0.3'
 ```
 
 ## How to use
-To measure execution time just wrap your code:
+To measure execution time just wrap your code by class `Timer`:
  
 ```java
 void heavyMethod() {
@@ -20,7 +20,7 @@ void heavyMethod() {
     timer.stop();
 }
 ```
-You can found `Chrono` output in logcat by tag `ChronoLog` with debug level:
+You can see `Chrono` output in logcat by tag `ChronoLog` with debug level:
 
 <img src="chrono_log_sample_1.png" width="450">
 
@@ -34,7 +34,7 @@ void heavyMethod() {
 
 <img src="chrono_log_sample_2.png" width="320">
 
-Also you can capture any point in your code with specified tag:
+Also you can trace any point in your code by method `capture`:
 
 ```java
 void heavyMethod() {
