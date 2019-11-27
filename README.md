@@ -22,7 +22,7 @@ void heavyMethod() {
 ```
 You can see `Chrono` output in logcat by tag `ChronoLog` with debug level:
 
-<img src="chrono_log_sample_1.png" width="450">
+<img src="chrono_log_sample_1.png" width="800">
 
 By default the timer named with link to file where you created it, but you can set name explicitly:
 
@@ -32,7 +32,7 @@ void heavyMethod() {
     ...
 ```
 
-<img src="chrono_log_sample_2.png" width="320">
+<img src="chrono_log_sample_2.png" width="600">
 
 Also you can trace any point in your code by method `capture`:
 
@@ -48,7 +48,7 @@ void heavyMethod() {
 }
 ```
 
-<img src="chrono_log_sample_3.png" width="400">
+<img src="chrono_log_sample_3.png" width="760">
 
 If you want to trace code over several classes you can use `Chrono` as static storage of your timer with access by key. Dont worry, `Timer` is thread safe!
 
@@ -83,7 +83,7 @@ class DummyFragment extends Fragment {
 }
 ```
 
-<img src="chrono_log_sample_4.png" width="400">
+<img src="chrono_log_sample_4.png" width="760">
 
 ## License
 
