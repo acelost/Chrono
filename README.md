@@ -24,7 +24,7 @@ You can see `Chrono` output in logcat by tag `ChronoLog` with debug level:
 
 <img src="chrono_log_sample_1.png" width="800">
 
-By default the timer named with link to file where you created it, but you can set name explicitly:
+By default the timer named with link to file and method name where you created it, but you can set name explicitly:
 
 ```java
 void heavyMethod() {
