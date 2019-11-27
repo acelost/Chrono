@@ -23,6 +23,9 @@
         <Button style="@style/NavigateButton"
             android:id="@+id/trace_fragment_transaction"/>
 
+        <Button style="@style/NavigateButton"
+            android:id="@+id/trace_heavy_method"/>
+
     </LinearLayout>
 
 </ScrollView>

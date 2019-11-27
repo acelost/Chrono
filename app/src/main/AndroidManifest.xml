@@ -19,6 +19,7 @@
         <activity android:name=".samples.MeasureLifecycleMethodsSample" />
         <activity android:name=".samples.TraceLifecycleMethodsSample" />
         <activity android:name=".samples.TraceFragmentTransactionSample" />
+        <activity android:name=".samples.HeavyMethodSample" />
     </application>
 
 </manifest>

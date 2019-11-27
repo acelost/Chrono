@@ -4,4 +4,5 @@
     <string name="measure_lifecycle_methods">Measure Lifecycle Methods</string>
     <string name="trace_lifecycle_methods">Trace Lifecycle Methods</string>
     <string name="trace_fragment_transaction">Trace Fragment Transaction</string>
+    <string name="trace_heavy_method">Trace Heavy Method</string>
 </resources>
