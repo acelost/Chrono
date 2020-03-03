@@ -74,7 +74,7 @@ public final class Chrono {
 
     static void toBunch(@NonNull final String bunch, @NonNull final Timer timer) {
         synchronized (bunchesLock) {
-            Set<Timer> timers = bunches.get(timer.getSubject());
+            Set<Timer> timers = bunches.get(bunch);
             if (timers == null) {
                 final Set<Timer> newBunch = new HashSet<>();
                 bunches.put(bunch, newBunch);

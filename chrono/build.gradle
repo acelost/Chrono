@@ -5,7 +5,7 @@ publish {
 
     def groupProjectID = 'com.acelost.chrono'
     def artifactProjectID = 'chrono'
-    def publishVersionID = '0.0.3'
+    def publishVersionID = '0.0.4'
 
     userOrg = 'acelost'
     repoName = 'Chrono'
@@ -43,5 +43,5 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.annotation:annotation:1.1.0'
 }
