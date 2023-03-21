@@ -1,13 +1,13 @@
 # Chrono
 
-[![Bintray][bintraybadge-svg]][bintray]
+![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.acelost/chrono/badge.svg)
 
 Android library for measuring time intervals and tracing methods.
 
 ## How to integrate
 
 ```groovy
-implementation 'com.acelost.chrono:chrono:0.0.4'
+implementation 'io.github.acelost:chrono:0.0.5'
 ```
 
 ## How to use
@@ -100,6 +100,3 @@ class DummyFragment extends Fragment {
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-    
-[bintray]: https://bintray.com/acelost/Chrono/chrono
-[bintraybadge-svg]: https://img.shields.io/bintray/v/acelost/Chrono/chrono.svg
