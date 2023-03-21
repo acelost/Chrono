@@ -62,7 +62,7 @@ afterEvaluate {
                     licenses {
                         license {
                             name = 'License'
-                            url = 'https://github.com/Chrono/blob/main/LICENSE'
+                            url = 'https://github.com/Chrono/blob/master/LICENSE'
                         }
                     }
 
@@ -80,7 +80,7 @@ afterEvaluate {
                     scm {
                         connection = 'scm:git:github.com/acelost/Chrono.git'
                         developerConnection = 'scm:git:ssh://github.com/acelost/Chrono.git'
-                        url = 'https://github.com/acelost/Chrono/tree/main'
+                        url = 'https://github.com/acelost/Chrono/tree/master'
                     }
                 }
             }
