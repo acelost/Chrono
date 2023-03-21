@@ -1,29 +1,19 @@
-apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
 
-publish {
-
-    def groupProjectID = 'com.acelost.chrono'
-    def artifactProjectID = 'chrono'
-    def publishVersionID = '0.0.4'
-
-    userOrg = 'acelost'
-    repoName = 'Chrono'
-    groupId = groupProjectID
-    artifactId = artifactProjectID
-    publishVersion = publishVersionID
-    desc = 'Android library for measuring time intervals and tracing methods.'
-    website = 'https://github.com/acelost/Chrono'
-
+ext {
+    PUBLISH_GROUP_ID = acelost_group_id
+    PUBLISH_VERSION = chrono_library_version
+    PUBLISH_ARTIFACT_ID = 'chrono'
 }
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
 
 android {
-    compileSdkVersion 28
-
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 28
+        minSdkVersion 21
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
